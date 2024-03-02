@@ -1,0 +1,24 @@
+.mainWindow
+    width: 750px
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    background-color: #2B2B2B
+    
+    animation: ligth 0.5s infinite linear
+    animation-duration: 10s
+
+@keyframes ligth 
+  0% 
+    box-shadow: 0 4px 61px 39px rgba(102, 102, 102, 0.25)
+  50%
+    box-shadow: 0 4px 61px 39px rgba(224, 224, 224, 0.25)
+  100%
+    box-shadow: 0 4px 61px 39px rgba(102, 102, 102, 0.25)
+
+
+@media (max-width: 480px)
+  .mainWindow
+    width: 100%
