@@ -10,7 +10,7 @@ export const MainContent = () => {
 			{
 				// Перебор массива и вывод элементов
 				message.map(el => {
-					return <Card {...el} />;
+					return <Card {...el} key={el.id} />;
 				})
 			}
 		</div>

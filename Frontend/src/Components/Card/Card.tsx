@@ -8,7 +8,7 @@ interface Props {
 export const Card = ({ id, name, text }: Props) => {
 	// отрисовка сообщений
 	return (
-		<div className={style.Card} key={id}>
+		<div className={style.Card}>
 			<div className={style.photo}></div>
 			<div className={style.contText}>
 				<h4 className={style.name}>{name}</h4>
