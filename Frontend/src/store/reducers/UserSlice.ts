@@ -10,7 +10,7 @@ interface UserEl {
 	name: string;
 }
 // стартовае значение
-const initialState: Users = {
+export const initialState: Users = {
 	message: []
 };
 
@@ -21,12 +21,11 @@ export const userSlice = createSlice({
 		// логика добовления сообщения
 		// данные с сервера поподают сюда
 		setMessage(state, action) {
-			const Obj = {
+			state.message.push({
 				text: action.payload,
 				id: state.message.length + 1,
 				name: 'User'
-			};
-			state.message.push(Obj);
+			});
 		}
 	}
 });

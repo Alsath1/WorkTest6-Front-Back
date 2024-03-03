@@ -1,8 +1,8 @@
 import style from './App.module.sass';
-import { Header } from './Components/Header/Header';
-import { MainContent } from './Components/MainContent/MainContent';
-import { Input } from './Components/Input/Input';
-import { useConnectSocket } from './hooks/useConnectSocket';
+import { Header } from '../Components/Header/Header';
+import { MainContent } from '../Components/MainContent/MainContent';
+import { Input } from '../Components/Input/Input';
+import { useConnectSocket } from '../hooks/useConnectSocket';
 
 const App = () => {
 	useConnectSocket();
